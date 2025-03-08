@@ -29,6 +29,13 @@ void if_else_statements() {
     }
 }
 
+void conditional_operators() {
+    int sales = 21'000;
+    double comission = sales > 30'000 ? 0.1 : 0.05;
+
+    cout << "Comission Percentage: " << comission << endl;
+}
+
 // When comparing two different types compiler does the type conversion from smaller less percise to the larger more precise type.
 // for example when comparing integer to double, compiler will type case integer to double before comparing.
 // == for equality, != not equal
@@ -40,10 +47,13 @@ void if_else_statements() {
 // ! - NAND 
 // && - And
 // || - OR
+// Conditional Operators
+// Works like (condition) ? if true do this : else do this
+
 
 int main() {
 
-    if_else_statements();
+    conditional_operators();
     
     return 0;
 }
