@@ -60,6 +60,8 @@ void bubble_sort() {
     }
 }
 
+
+
 // CPP Arrays 
 // can be declared with the type and providing size of array
 // int numbers[5] - it declares an array of integers with size of 5
@@ -85,6 +87,10 @@ void bubble_sort() {
     // Bubble Sort
     // Merge Sort
     
+// multi dimensional arrays
+// int matrix[3][5] = {
+    // 
+//}
 
 int main() {
     int numbers[] = {10, 20, 30, 40, 50};
@@ -95,5 +101,18 @@ int main() {
 
     // cout << "index of 30 is " <<  linear_search(numbers, 5, 45) << endl;
 
-    bubble_sort();
+    int matrix[2][3] = {
+        {10, 20, 30},
+        {11, 21, 31}
+    };
+
+    for (int row=0; row<2; row++) {
+        for (int col=0; col<3; col++) {
+            cout << matrix[row][col] << endl;
+        }
+    }
+
+
+
+    return 1;
 }
